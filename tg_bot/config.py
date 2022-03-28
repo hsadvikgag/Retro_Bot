@@ -16,7 +16,7 @@ class Config(object):
     STRICT_GMUTE = ''
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://tnhvvfrkmgqeyn:a25313cdc8bb02e780b525c5a25b73b4091ba65b65372917338c715051ad295c@ec2-52-212-228-71.eu-west-1.compute.amazonaws.com:5432/d4amp351rj31gh'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
@@ -29,7 +29,7 @@ class Config(object):
     WHITELIST_USERS = []  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     DONATION_LINK = None  # EG, paypal
     CERT_PATH = None
-    PORT = ''
+    PORT = 5432
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
